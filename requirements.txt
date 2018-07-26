@@ -1,0 +1,6 @@
+pyTelegramBotApi
+flask
+request
+gunicorn
+spacy
+requests
