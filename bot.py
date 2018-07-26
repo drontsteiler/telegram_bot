@@ -83,7 +83,7 @@ def getMessage():
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://ramazan-telebot-test.herokuapp.com/' + TOKEN)
+    bot.set_webhook(url='https://aibota.herokuapp.com/' + TOKEN)
     return "!", 200
 
 
