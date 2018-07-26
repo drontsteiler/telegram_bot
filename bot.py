@@ -42,7 +42,7 @@ def handle_voice(message):
 @bot.message_handler(content_types="text")
 def handle_text(message):
     msg = "error"
-    print("\n\nСообщение от пользователя:" + message.text + "\n\n")
+    print("\n\nСообщение от пользователя " + message.from_user.first_name + ":" + message.text + "\n\n")
     if message.text == "Что ты умеешь делать?":
         keyboard = types.InlineKeyboardMarkup()
         weather = types.InlineKeyboardButton(text="Погода", callback_data="weather")
